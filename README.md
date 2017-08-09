@@ -19,6 +19,6 @@ This template is one of the easiest ways to organize couchbase monitoring in zab
 
 >yum install jq
 
-
+4) Import zbx_export_templates.xml in zabbix template window.
 
 Enjoy it.
