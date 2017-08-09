@@ -9,7 +9,6 @@ result_string="$str_start"
 bucket='"default"'
 i=0
 
-#for (( j=0; j<=5; j++ ))
 while true
 do
 	result_string="$result_string"'{"{#BUCKET_NAME}":'"$bucket"'}'
