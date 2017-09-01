@@ -1,6 +1,6 @@
 #!/bin/bash
 
-json=`curl -s localhost:8091/pools/default --max-time 3`
+json=`curl -s -u user:123456 localhost:8091/pools/default --max-time 3`
 i=0
 
 while true
