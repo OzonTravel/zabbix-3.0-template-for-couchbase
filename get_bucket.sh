@@ -1,6 +1,6 @@
 #!/bin/bash
 
-json=`curl -s localhost:8091/pools/default/buckets/ --max-time 3 `
+json=`curl -s -u user:123456 localhost:8091/pools/default/buckets/ --max-time 3 `
 
 str_start='{"data":['
 str_end=']}'
