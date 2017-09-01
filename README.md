@@ -23,4 +23,6 @@ yum install jq
 
 4) Import zbx_export_templates.xml in zabbix template window.
 
+5) Create new reed only user in couchbase with username "user" and password "123456"
+
 Enjoy it.
