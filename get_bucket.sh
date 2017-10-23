@@ -6,18 +6,17 @@ str_start='{"data":['
 str_end=']}'
 
 result_string="$str_start"
-bucket='"default"'
 i=0
 
 while true
 do
-	result_string="$result_string"'{"{#BUCKET_NAME}":'"$bucket"'}'
-	((i++))
-	bucket=`echo $json |jq ".[$i].name"`
+        bucket=`echo $json |jq ".[$i].name"`
 	if [ "$bucket" = "null" ]
 	then
 		break
 	fi
+	((i++))
+	result_string="$result_string"'{"{#BUCKET_NAME}":'"$bucket"'}'
 	result_string="$result_string"','
 done
 
